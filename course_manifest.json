@@ -1,0 +1,13 @@
+{
+  "course": "COMP2350",
+  "term": "Fall 2026",
+  "audience": "students",
+  "notebook_count": 15,
+  "data": [
+    "sales.csv",
+    "students.csv",
+    "heart_synthetic.csv",
+    "transactions.csv"
+  ],
+  "contains_solutions": false
+}
