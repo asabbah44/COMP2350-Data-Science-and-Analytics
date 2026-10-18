@@ -7,18 +7,25 @@ Student exercise repository for **COMP2350, Fall 2026**.
 - `notebooks/`: 15 weekly Jupyter notebooks with guided examples, core exercises, interpretation prompts, and challenges.
 - `data/`: small synthetic datasets used only for teaching and practice.
 - `project/README.md`: final-project expectations and submission checklist.
+- `environment.yml`: reproducible Anaconda environment for the course.
 - `requirements.txt`: Python packages used across the course.
 
 This branch contains **student materials only**. It intentionally does not include completed solutions.
 
 ## Getting started
 
+Install [Anaconda](https://www.anaconda.com/download), then open **Anaconda Prompt** (or a terminal where `conda` is available) in this repository folder.
+
 ```bash
-python -m venv .venv
-# Windows PowerShell
-.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
+conda env create -f environment.yml
+conda activate comp2350
 jupyter lab
+```
+
+If the environment already exists and `environment.yml` has changed, update it with:
+
+```bash
+conda env update -f environment.yml --prune
 ```
 
 Open the notebook for the current week and run it from top to bottom. Dataset paths are relative to the `notebooks/` folder, so keep the repository structure unchanged.
